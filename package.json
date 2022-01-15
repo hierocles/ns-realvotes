@@ -1,0 +1,25 @@
+{
+  "name": "ns-realvotes",
+  "version": "0.1.0",
+  "description": "A simple app that scrapes NationStates World Assembly voting pages and subtracts all the extra votes from Delegates",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Dylan H.",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cheerio": "^1.0.0-rc.10",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.2.0",
+    "semantic-ui-css": "^2.4.1"
+  }
+}

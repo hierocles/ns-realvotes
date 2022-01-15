@@ -1,0 +1,47 @@
+<div class="one column row">
+  <div class="column">
+    <h2 class="ui tagline header">What would equality look like in the <a class="highlight blue" href="https://www.nationstates.net/page=UN_delegate_votes/council=1">General Assembly</a>?
+    </h2>
+  </div>
+</div>
+<% if(data===false) { %>
+<div class="one column row">
+  <div class="column">
+    <h3 class="ui subtitle header">No resolution is at vote in the General Assembly right now.</h3>
+  </div>
+</div>
+<% } else { %>
+<table class="ui very basic collapsing table">
+  <tbody>
+    <tr>
+      <td class="top aligned statistic number"><%= data.for.original %></td>
+      <td class="statistic text">official votes for</td>
+    </tr>
+    <tr>
+      <td class="top aligned statistic number"><%= data.against.original %></td>
+      <td class="statistic text">official votes against</td>
+    </tr>
+    <tr>
+      <td class="top aligned statistic number"><%= data.for.deinflated %></td>
+      <td class="statistic text">real nations for</td>
+    </tr>
+    <tr>
+      <td class="top aligned statistic number"><%= data.against.deinflated %></td>
+      <td class="statistic text">real nations against</td>
+    </tr>
+    <tr>
+      <td class="top aligned statistic number"><%= (data.for.difference + data.against.difference) %></td>
+      <td class="statistic text">extra Delegate votes</td>
+    </tr>
+  </tbody>
+</table>
+<% } %>
+<div class="one column row">
+  <div class="column" style="text-align: center;">
+    <a href="/">
+      <button class="ui button">
+        <i class="caret left icon"></i> Back
+      </button>
+    </a>
+  </div>
+</div>
