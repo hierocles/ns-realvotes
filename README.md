@@ -2,7 +2,7 @@
 
 ## Real Votes
 
-[product-screenshot]
+![Real Votes index page](screenshot1.png)
 
 **Real Votes** is a simple Node-based app that scrapes NationStates, does a little math behind the scenes, and shows what NationStates World Assembly votes would look like if everybody had only one vote.
 
@@ -64,7 +64,7 @@ To run your own copy of Real Votes, you need a webserver with Node and npm insta
 
 Load up Real Votes and from the index page, you can select General Assembly or Security Council. If a vote is currently active, you'll be given a breakdown of the vote count and what it would be sans the extra Delegate votes.
 
-[product-screenshot2]
+![Real Votes GA page](screenshot2.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
