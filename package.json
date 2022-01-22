@@ -1,7 +1,7 @@
 {
   "name": "ns-realvotes",
   "version": "0.1.0",
-  "description": "A simple app that scrapes NationStates World Assembly voting pages and subtracts all the extra votes from Delegates",
+  "description": "A simple app that shows what NationStates World Assembly votes would be if the extra Delegate votes were removed",
   "main": "index.js",
   "type": "module",
   "directories": {

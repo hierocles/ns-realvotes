@@ -4,7 +4,7 @@
 
 ![Real Votes index page](screenshot1.png)
 
-**Real Votes** is a simple Node-based app that scrapes NationStates, does a little math behind the scenes, and shows what NationStates World Assembly votes would look like if everybody had only one vote.
+**Real Votes** is a simple Node-based app that gets data from the NationStates API, does a little math behind the scenes, and shows what NationStates World Assembly votes would look like if everybody had only one vote.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

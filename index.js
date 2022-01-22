@@ -60,10 +60,9 @@ app.get('/ga', asyncHandler(async (req, res, next) => { // jshint ignore:line
 }));
 
 app.get('/sc', asyncHandler(async (req, res, next) => { // jshint ignore:line
-  let data = await sc().then(data => {
-    if(data !== false) {
-      let json = JSON.parse(data);
-      return json;
+  let data = await sc().then(result => {
+    if(result !== false) {
+      return JSON.parse(result);
     }
     else {
       return false;
