@@ -45,10 +45,9 @@ app.get('/apidoc', (req, res) => {
 });
 
 app.get('/ga', asyncHandler(async (req, res, next) => { // jshint ignore:line
-  let data = await ga().then(data => {
-    if(data !== false) {
-      let json = JSON.parse(data);
-      return json;
+  let data = await ga().then(result => {
+    if(result !== false) {
+      return JSON.parse(result);
     }
     else {
       return false;
